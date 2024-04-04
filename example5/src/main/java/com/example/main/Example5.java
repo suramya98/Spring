@@ -4,7 +4,7 @@ import com.example.beans.Vehicle;
 import com.example.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Example4 {
+public class Example5 {
 
     public static void main(String[] args) {
 
@@ -13,7 +13,8 @@ public class Example4 {
 
         //Gives Spring Bean that is being maintained by the Spring IOC Container
         Vehicle veh = context.getBean(Vehicle.class);
-        System.out.println("Primary Vehicle name from Spring Context is: " + veh.getName());
+        System.out.println("Component Vehicle name from Spring Context is: " + veh.getName());
+        veh.printHello();
 
     }
 }
