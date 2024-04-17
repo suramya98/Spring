@@ -20,5 +20,7 @@ public class Example15 {
         if(vehicleService1==vehicleService2){
             System.out.println("VehicleService bean is a singleton scoped bean");
         }
+        else
+            System.out.println("VehicleService bean is a prototype scoped bean");
     }
 }
